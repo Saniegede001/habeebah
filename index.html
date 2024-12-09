@@ -4,6 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habeebah's calculator</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+    
+        .container {
+            max-width: 400px;
+            border: 2px solid grey;
+            margin: auto;
+        }
+    
+        #screen {
+            background-color: #333;
+            color: #fff;
+            height: 100px;
+            text-align: end;
+            font-size: 22px;
+        }
+    
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    
+        .button {
+            border: 2px solid grey;
+            text-align: center;
+            padding: 8px 1px;
+            margin: 12px 2px;
+            font-weight: bold;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    
+        .button:hover {
+            background-color: antiquewhite;
+        }
+    
+        .button:active {
+            opacity: 60%;
+        }
+    
+        .special {
+            background-color: rgb(255, 22, 103);
+            color: white;
+        }
+    
+        .special:hover {
+            color: black;
+        }
+    
+        #equal {
+            background-color: blue;
+            grid-column-start: 2;
+            grid-column-end: 5;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <h2>Habeebah's calculator</h2>
@@ -59,46 +123,3 @@
     </script>
 </body>
 </html>
-<style>
-    body{
-        font-family: Arial, sans-serif;
-    }
-    h2 {
-        text-align: center;
-    }
-    .container {
-        max-width: 400px;
-        border: 2px solid grey;
-        margin: auto;
-    }
-    #screen {
-        background-color: #333;
-        color: #fff;
-        height: 100px;
-        text-align: end;
-        font-size: 22px;
-    }
-
-    .buttons {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .button {
-        border: 2px solid grey;
-        text-align: center;
-        padding: 6px 1px;
-        margin: 8px 2px;
-        font-weight: bold;
-        font-size: 20px;
-    }
-    .special {
-        background-color: rgb(255, 22, 103);
-        color: white;
-    }
-    #equal {
-        background-color: blue;
-        grid-column-start: 2;
-        grid-column-end: 5;
-        color: #fff;
-    }
-</style>
